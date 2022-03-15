@@ -4,7 +4,7 @@ function Places() {
   return (
     <div className='places'>
       <p />
-      Todos (MuCo, Mu, CHR) services
+      Todos places (MuCo, Mu, CHR) services
     </div>
   );
 }

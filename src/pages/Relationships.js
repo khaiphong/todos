@@ -4,7 +4,7 @@ function Relationships() {
   return (
     <div className='relationships'>
       <p />
-      Todos (MuCo, Mu, CHR) services
+      Todos relationships (MuCo, Mu, CHR) services
     </div>
   );
 }

@@ -1,7 +1,9 @@
+
+
 import Sidebar from './components/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import About from './pages/About';
+import Home from './pages/Home';
 import Activities from './pages/Activities';
 import Relationships from './pages/Relationships';
 import Places from './pages/Places';
@@ -13,18 +15,25 @@ function App() {
   return (
     <Router>
       <Sidebar />
+      <p>GraphQL client</p>
       <Routes>
-      <Route path='/' exact component={About} />
-        <Route path='/about' exact component={About} />
-        <Route path='/activities' exact component={Activities} />
-        <Route path='/relationships' exact component={Relationships} />
-        <Route path='/places' exact component={Places} />
-        <Route path='/services' exact component={Services} />
-        <Route path='/services/directories' exact component={Directories} />
-        <Route path='/services/allowNotifications' exact component={AllowNotifications} />
+      <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/activities' element={<Activities />} />
+        <Route path='/relationships' element={<Relationships />} />
+        <Route path='/places' element={<Places />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/services/directories' element={<Directories />} />
+        <Route path='/services/allowNotifications' element={<AllowNotifications />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+/*
+  GraphQL has only one route to each domain e.g. https/khaiphong.io/graphql
+  to fetch info from that domain. Activities, Relationships, Places, and
+  Services are Descriptions and PR of the site.
+*/

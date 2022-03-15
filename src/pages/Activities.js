@@ -4,7 +4,7 @@ function Activities() {
   return (
     <div className='activities'>
       <p />
-      Todos (MuCo, Mu, CHR) services
+      Todos activities (MuCo, Mu, CHR) services
     </div>
   );
 }
